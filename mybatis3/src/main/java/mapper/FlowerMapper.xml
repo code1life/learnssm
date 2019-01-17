@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.FlowerMapper">
+    <select id="selectFlowerById" parameterType="int" resultType="pojo.Flower">
+    select * from flower where id = #{id}
+  </select>
+    <select id="selectAllFlower" resultType="pojo.Flower">
+        select * from flower
+    </select>
+</mapper>
